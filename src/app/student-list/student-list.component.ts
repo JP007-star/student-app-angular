@@ -23,7 +23,7 @@ export class StudentListComponent implements OnInit {
     }
 
     studentDetails(id: number){
-      this.router.navigate(['student-details', id]);
+      this.router.navigate(['student', id]);
     }
 
     updateStudent(id: number){

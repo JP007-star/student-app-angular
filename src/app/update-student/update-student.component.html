@@ -1,1 +1,38 @@
-<p>update-student works!</p>
+<div class="row">
+  <div class="card col-md-6 offset-md-3 offset-md-3">
+      <div class="row">
+          <h3 class="text-center"> Update Student </h3>
+          <hr />
+          <div class="card-body">
+              <form (ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                  <label>ID</label>
+                  <input type="text" class="form-control" id="id" [(ngModel)]="student.id"
+                      name="id">
+                  </div>
+                  <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" id="name" [(ngModel)]="student.name"
+                          name="name">
+                  </div>
+
+                  <div class="form-group">
+                      <label>Age</label>
+                      <input type="text" class="form-control" id="age" [(ngModel)]="student.age"
+                          name="age">
+                  </div>
+
+                  <div class="form-group">
+                      <label>Fee</label>
+                      <input type="text" class="form-control" id="fee" [(ngModel)]="student.fee"
+                          name="fee">
+                  </div>
+                  <br />
+                  <button class="btn btn-success" type="submit">Submit</button>
+
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
